@@ -1,8 +1,8 @@
  PS! Replace this with your own channel ID
  If you use this channel ID your app will stop working in the future
-const CHANNEL_ID = 'SU0JvVSTSCB2ElyV';
+const CLIENT_ID = 'SU0JvVSTSCB2ElyV';
 
-const drone = new ScaleDrone(CHANNEL_ID, {
+const drone = new ScaleDrone(CLIENT_ID, {
   data {  Will be sent out as clientData via events
     name getRandomName(),
     color getRandomColor(),
