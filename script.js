@@ -59,7 +59,8 @@ drone.on('error', error => {
 });
 
 function getRandomName() {
- return = prompt("Enter your name");
+ var name prompt("Please enter your name:", "Harry Potter");
+  return = name;
   );
 }
 
