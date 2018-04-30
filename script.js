@@ -4,7 +4,7 @@ const CLIENT_ID = 'SU0JvVSTSCB2ElyV';
 
 const drone = new ScaleDrone(CLIENT_ID, {
   data: { // Will be sent out as clientData via events
-    name: getRandomName(),
+    name: getName(),
     color: getRandomColor(),
   },
 });
@@ -58,7 +58,7 @@ drone.on('error', error => {
   console.error(error);
 });
 
-function getRandomName() {
+function getName() {
   var txt;
     var person = prompt("Please enter your name:", "Harry Potter");
     if (person == null || person == "") {
